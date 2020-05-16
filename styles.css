@@ -1,0 +1,90 @@
+body{font-family: 'Inter', sans-serif;}
+h2{font-weight: 700}
+h3{font-size: 4rem;
+font-weight: 700;
+padding: 3% 0%;
+white-space: nowrap;}
+h4{color:#808080; font-size: 1rem;
+}
+
+h5{font-size: 0.8rem;
+    color: grey;
+    font-weight: 800;}
+
+h6{color: grey;font-weight: 700}
+/* header section */
+.headersection{padding: 5% 10%;
+background-color: #F5F7FF;
+margin-bottom: 15%}
+
+#title{display:inline-block;
+font-weight: 700}
+.custom-switch{display:inline-block;
+  position: absolute;
+  top: 75px;
+  right: 10%;}
+
+
+/* follower section */
+.followersection{padding: 0% 10%;
+position: absolute;
+top: 25%;
+z-index: 2}
+.followerstats{text-align: center;
+background-color:#F0F2FA;
+border:none;
+}
+
+.fbtwitter{border-top: 3px solid #00BFFF}
+
+.insta:first-child:before {
+    content:'';
+    position:absolute;
+    width:100%;
+    height:3px;
+    background:linear-gradient(to right, #FDC468, #DF4996);
+    top:0px;
+    left:0;
+  }
+.youtube{border-top: 3px solid #C4032A}
+
+.increase{color: #1DB489;}
+.updown{height: 0.5rem}
+.socialicon{height: 1rem;margin-right: 2%}
+
+
+/* Overviews section */
+.overview-section{padding: 3% 10%}
+#overview{color:grey;
+  font-size: 1.5rem;
+font-weight: 700;}
+.overviewstats{
+  background-color:#F0F2FA;
+  border: none
+}
+.overview-row{padding: 2% 0%}
+.overviewicons{position: absolute;right: 10%}
+.statsadj,.statsadj1{display: inline-block;}
+.overviewstats .statsadj1{position: absolute;right: 10%;top: 60%;font-size: 0.8rem}
+.statsadj1 .updown{height: 0.3rem}
+
+/* dark mode features */
+.darkmode{background-color: #1E202A}
+.darkmodeheader{background-color:#1F212E}
+.darkmodetext{color:#fff}
+.darkmodepurpletext{color:#8B97C6}
+.darkmodecard{background-color: #252A41;
+}
+/* .custom-control-input:checked~.custom-control-label::before{bacl} */
+.custom-control-input:checked~.custom-control-label::before{background:linear-gradient(to right, #378FE6,#3EDA82)}
+
+/* media query */
+@media (max-width:1200px) {
+  .followersection{position: static;}
+  #overview{text-align: center;}
+  .overview-row{padding: 0%;}
+  .overviewstats{border-bottom: 1px solid white}
+  .headersection,.followersection{text-align: center;}
+  .custom-switch{position: static;display: block;margin: 2% 0%}
+  .followers{font-size: 2rem}
+}

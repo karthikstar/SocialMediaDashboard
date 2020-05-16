@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- CSS stylesheet -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Bootstrap scripts -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Social Media Dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid headersection">
+    <h1 id="title">Social Media Dashboard</h1>
+    </h>
+    <div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="customSwitch1" onclick="darkmode()">
+      <label class="custom-control-label" for="customSwitch1">Dark Mode</label>
+    </div>
+    <p class="followers">Total Followers: 23,004</p>
+
+  </div>
+
+  <div class="container-fluid followersection">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card followerstats fbtwitter">
+          <div class="card-body ">
+            <h5><img class="socialicon" src="images/icon-facebook.svg" alt="fbicon">@nathanf</h5>
+            <h3>1987</h3>
+            <h4>FOLLOWERS</h4>
+            <p class="increase"><img class="updown" src="images/icon-up.svg" alt="increaselogo">12 Today</p>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3">
+        <div class="card followerstats fbtwitter">
+          <div class="card-body ">
+            <h5><img class="socialicon" src="images/icon-twitter.svg" alt="twitter">@nathanf</h5>
+            <h3>1044</h3>
+            <h4>FOLLOWERS</h4>
+            <p class="increase"><img class="updown" src="images/icon-up.svg" alt="increaselogo">99 Today</p>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3">
+        <div class="card followerstats insta">
+          <div class="card-body ">
+            <h5><img class="socialicon" src="images/icon-instagram.svg" alt="instaicon">@realnathanf
+            </h5>
+            <h3>11k</h3>
+            <h4>FOLLOWERS</h4>
+            <p class="increase"><img class="updown" src="images/icon-up.svg" alt="increaselogo">1099 Today</p>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3">
+        <div class="card followerstats youtube">
+          <div class="card-body ">
+            <h5><img class="socialicon" src="images/icon-youtube.svg" alt="youtubeicon">Nathan F.
+
+            </h5>
+            <h3>8239</h3>
+            <h4>SUBSCRIBERS</h4>
+            <p class="increase"><img class="updown" src="images/icon-down.svg" alt="decreaselogo">144 Today</p>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="container-fluid overview-section">
+    <h1 id="overview">Overview - Today</h1>
+    <div class="row overview-row">
+      <div class="col-lg-3">
+        <div class="card overviewstats">
+          <div class="card-body">
+            <h6>Page Views<img class="overviewicons" src="images/icon-facebook.svg" alt="fbicon"></h6>
+            <h2 class="statsadj">87</h2>
+            <p class="statsadj1"><img class="updown" src="images/icon-up.svg" alt="increaselogo"> 3%</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3">
+        <div class="card overviewstats">
+          <div class="card-body">
+            <h6>Likes<img class="overviewicons" src="images/icon-facebook.svg" alt="fbicon"></h6>
+            <h2 class="statsadj">52</h2>
+            <p class="statsadj1"><img class="updown" src="images/icon-down.svg" alt="decreaselogo"> 2%</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card overviewstats">
+          <div class="card-body">
+            <h6>Likes<img class="overviewicons" src="images/icon-instagram.svg" alt="instaicon"></h6>
+            <h2 class="statsadj">5462</h2>
+            <p class="statsadj1"><img class="updown" src="images/icon-up.svg" alt="increaselogo"> 2257%</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card overviewstats">
+          <div class="card-body">
+            <h6>Profile Views<img class="overviewicons" src="images/icon-instagram.svg" alt="instaicon"></h6>
+            <h2 class="statsadj">52k</h2>
+            <p class="statsadj1"><img class="updown" src="images/icon-up.svg" alt="increaselogo"> 1375%</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row overview-row">
+      <div class="col-lg-3">
+        <div class="card overviewstats">
+          <div class="card-body">
+            <h6>Retweets<img class="overviewicons" src="images/icon-twitter.svg" alt="twittericon"></h6>
+            <h2 class="statsadj">117</h2>
+            <p class="statsadj1"><img class="updown" src="images/icon-up.svg" alt="increaselogo"> 303%</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3">
+        <div class="card overviewstats">
+          <div class="card-body">
+            <h6>Likes<img class="overviewicons" src="images/icon-twitter.svg" alt="twittericon"></h6>
+            <h2 class="statsadj">507</h2>
+            <p class="statsadj1"><img class="updown" src="images/icon-up.svg" alt="increaselogo"> 553%</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card overviewstats">
+          <div class="card-body">
+            <h6>Likes<img class="overviewicons" src="images/icon-youtube.svg" alt="twittericon"></h6>
+            <h2 class="statsadj">107</h2>
+            <p class="statsadj1"><img class="updown" src="images/icon-down.svg" alt="decreaselogo"> 19%</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card overviewstats">
+          <div class="card-body">
+            <h6>Total Views<img class="overviewicons" src="images/icon-youtube.svg" alt="twittericon"></h6>
+            <h2 class="statsadj">1407</h2>
+            <p class="statsadj1"><img class="updown" src="images/icon-down.svg" alt="decreaselogo"> 12%</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="attribution">
+    <p>Coded by Elangovan Karthikeyan</p>
+  </div>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
